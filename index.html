@@ -3,47 +3,66 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Coiny|Josefin+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<title>Music Mixer</title>
+	<title>Zoo Chorus</title>
 </head>
 <body>
 	<div id="container">
 		<header id="mainHeader">
-			<h1>The Beautiful Music</h1>
-			<p>Welcome to the Music World! Try to click different icons, enjoy the magic of music!</p>
+			<h1>Fun in the Zoo</h1>
+			<p>Welcome to the Zoo Chorus !<br>Try to click different animals, enjoy the magic of music !</p>
 		</header>
 
 		<section id="mainContent">
-			<h2 class="hidden"> Main Content </h2>
-			<div class="icons">
-				<img src="images/" alt="Music Tool 1">
-				<button>Click Me!</button>
-				
+			<h2 class="hidden"> Voice Area</h2>
+			<div class="icons"></div>
+			<!-- this is the listern animal voice area -->
+			
+			<div class="chorus">
+				<div class="chorus-zone tl"> </div>
+		 		<div class="chorus-zone tr"> </div>
+		 		<div class="chorus-zone bl"> </div>
+		 		<div class="chorus-zone br"> </div>
 			</div>
-
-			<div class="icons">
-				<img src="images/" alt="Music Tool 2">
-				<button>Click Me!</button>
-			</div>
-
-			<div class="icons">
-				<img src="images/" alt="Music Tool 3">
-				<button>Click Me!</button>
-			</div>
-
-			<div class="icons">
-				<img src="images/" alt="Music Tool 4">
-				<button>Click Me!</button>
-			</div>
-
-			<div class="icons">
-				<img src="images/" alt="Music Tool 5">
-				<button>Click Me!</button>
-				
-			</div>			
 		</section>
 
+		<!-- this is pick up animal voice area-->
+		<section>
+			<h2 class="hidden">Animal Area</h2>
+			<p>Pick the animals' voice.</p>
+			<div id="animalHolder">
+				<div>
+					<img data-puzzleref="0" src="images/animalzero.jpg" alt="animal">
+				</div
+				>
+				<div>
+					<img data-puzzleref="1" src="images/animalone.jpg" alt="animal">
+				</div>
+
+				<div>
+					<img data-puzzleref="2" src="images/animaltwo.jpg" alt="animal">
+				</div>
+
+				<div>
+					<img data-puzzleref="3" src="images/animalthree.jpg" alt="animal">
+				</div>
+
+				<div>
+					<img data-puzzleref="4" src="images/animalfour.jpg" alt="animal">
+				</div>
+
+				<div>
+					<img data-puzzleref="5" src="images/animalfive.jpg" alt="animal">
+				</div>	
+
+			</div>
+		</section>
+
+		<footer>
+			<h2 class="hidden"> Footer</h2>
+			<p>Enjoy the amazing voice !</p>
+		</footer>
 
 
 

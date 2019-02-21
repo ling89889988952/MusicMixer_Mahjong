@@ -14,14 +14,14 @@
 }
 
 h1{
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Coiny', cursive;
 	font-size:48px;
 	text-align: center;
 	margin: 20px;
 }
 
 p{
-	font-family: 'Inconsolata', monospace;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size:18px;
 	text-align: center;
 	margin: 20px;
@@ -34,13 +34,33 @@ img{
 
 #mainContent{
 	margin: 10px;
-	border:solid 1px black;
+	display: flex;
+	flex-direction: row;
 }
 
 .icons {
-	width:164px;
+	width:320px;
 	height: auto;
 	margin-top:20px;
-	margin-left: 20px;
+	margin-left:20px;
 	display: inline-block;
+	border:dotted 5px black;
+}
+
+.chorus {
+	width: 550px;
+	height: auto;
+	margin-top:20px;
+	margin-left: 30px;
+	display: inline-block;
+	border:dotted 5px black;
+}
+
+#animalHolder{
+	width: 850px;
+	height: auto;
+	margin:20px auto;
+	border:dotted 5px black;
+	display:flex;
+	flex-direction: row;
 }
