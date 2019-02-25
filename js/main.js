@@ -6,7 +6,7 @@
     let voicesBoard =  document.querySelector('.icons');
     let chorusBoard = document.querySelector('chorus');
 
-    let animalSelctors = document.querySelectorAll('#animalHolder img');
+    let mahjongSelctors = document.querySelectorAll('#mahjongHolder img');
 
     let dropZones = document.querySelectorAll('.chorus-zone');
 
