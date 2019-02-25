@@ -1,8 +1,9 @@
-# Zou_L_Xia_MQ_MusicMixer
+# Crazy Zoo Chorus
 
-This Project form Ling Zou and MingQian Xia. 
+Design concept: The design concept came from 
 
-We created the index.html and linked it with the main.css，reset.css and main.js .
+How to use this website?
 
-We plan to design a website, which contains the different icons and using the javascript to let the icons link with different audio.
-When the browser clicks the button under the different icons can make the different audio to mix, in order to create the amazing music.
+1. Browers can drag the different icon in the 'Animal area' to the 'Voice Area' when the icon was dragged into the voice area, Browers can listen to the different voice from the different icon.
+
+2. Browers can try to choose the different icons' voice after listening to their voice, and then drag the related icon to the chorus area. and click the button to listen the all the icon sing together.
