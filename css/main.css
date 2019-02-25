@@ -24,6 +24,16 @@ h1{
 	margin: 20px;
 }
 
+h3{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:21px;
+	text-align: center;
+	font-weight: bolder;
+	
+	
+}
+
+
 p{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size:18px;
@@ -48,7 +58,7 @@ img{
 	margin-top:20px;
 	margin-left:20px;
 	display: inline-block;
-	border:dotted 5px black;
+	border:dotted 3px gray;
 }
 
 .chorus {
@@ -57,14 +67,14 @@ img{
 	margin-top:20px;
 	margin-left: 30px;
 	display: inline-block;
-	border:dotted 5px black;
+	border:dotted 3px gray;
 }
 
 #mahjongHolder{
 	width: 850px;
 	height: auto;
 	margin:20px auto;
-	border:dotted 5px black;
+	border:dotted 3px gray;
 	display:flex;
 	flex-direction: row;
 }
