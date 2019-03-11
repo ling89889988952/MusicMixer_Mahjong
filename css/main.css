@@ -1,10 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
+.hidden {
+	display: none;
+}
 
 body{
-	background-color: white;
+    background-image: linear-gradient(to right , #9d7642, #86428e);
 }
+
 #container{
 	width: 960px;
 	height: auto;
@@ -13,9 +17,7 @@ body{
 
 }
 
-.hidden {
-	display: none;
-}
+
 
 h1{
 	font-family: 'Coiny', cursive;
@@ -46,36 +48,93 @@ img{
 	height: 100%;
 }
 
+#mainHeader{
+	margin-top: 10px;
+}
+
 #mainContent{
-	margin: 10px;
+	margin-top:50px;
 	display: flex;
 	flex-direction: row;
 }
 
-.icons {
-	width:320px;
-	height: auto;
-	margin-top:20px;
-	margin-left:20px;
-	display: inline-block;
-	border:dotted 3px gray;
+
+
+.leftArea{
+	border: 2px dashed transparent;
+	border-image: linear-gradient(to right, #efc04b, #d78f8d);
+	border-image-slice: 5;
+	margin-top: 10px;
+
 }
+.icons {
+	width:auto;
+	height: auto;
+	background-color: #6b483c;
+	border:dotted 3px transparent;
+	border-image: linear-gradient(to right, #c98e6f,#eecc2e);
+	border-image-slice: 5;
+	margin:5px;
+}
+
+
+.iconImg{
+	display: flex;
+	flex-direction: row;
+	margin:5px;
+}
+
+.iconImg img{
+	width: 100px;
+	height: auto;
+}
+
+.iconImg img:hover{
+	filter:drop-shadow(5px 5px 10px #000);
+	filter:brightness(120%);
+
+
+}
+
+
+.rightArea{
+	width: 350px;
+	height: 330px;
+	margin-left: 200px;
+	border: 2px dashed transparent;
+	border-radius: 10px;
+	border-image: linear-gradient(to right, #efc04b, #d7908d);
+	border-image-slice: 5;
+	margin-top: 10px;
+}
+
 
 .chorus {
-	width: 550px;
-	height: auto;
-	margin-top:20px;
-	margin-left: 30px;
-	display: inline-block;
-	border:dotted 3px gray;
-}
-
-#mahjongHolder{
-	width: 850px;
-	height: auto;
-	margin:20px auto;
-	border:dotted 3px gray;
-	display:flex;
+	width: 335px;
+	height: 315px;
+	background-color: #61325c;
+	border:dotted 3px transparent;
+	border-image: linear-gradient(to right, #bc836c,#eeca32);
+	border-image-slice: 5;
+	margin:5px;
+	display: flex;
 	flex-direction: row;
 }
 
+#chorusTitle{
+	margin-left: 200px;
+}
+
+#button{
+	margin-left: 110px;
+	width: 50px;
+}
+
+button{
+	margin-left: 40px;
+	margin-top: 15px;
+	width: 50px;
+}
+footer{
+	margin-top: 60px;
+}
