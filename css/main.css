@@ -121,6 +121,8 @@ img{
 	flex-direction: row;
 }
 
+.chorus-zone { height: 100px; width: 100px; border: thin solid white; }
+
 #chorusTitle{
 	margin-left: 200px;
 }
