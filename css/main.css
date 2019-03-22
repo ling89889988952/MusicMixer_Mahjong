@@ -13,8 +13,6 @@ body{
 	width: 960px;
 	height: auto;
 	margin: 0 auto;
-
-
 }
 
 
@@ -25,6 +23,7 @@ h1{
 	text-align: center;
 	margin: 20px;
 }
+
 
 h3{
 	font-family: 'Josefin Sans', sans-serif;
@@ -64,7 +63,7 @@ img{
 	border: 2px dashed transparent;
 	border-image: linear-gradient(to right, #efc04b, #d78f8d);
 	border-image-slice: 5;
-	margin-top: 10px;
+	margin:20px auto;
 
 }
 .icons {
@@ -81,8 +80,9 @@ img{
 .iconImg{
 	display: flex;
 	flex-direction: row;
-	margin:5px;
+	margin:25px 15px;
 }
+
 
 .iconImg img{
 	width: 100px;
@@ -98,43 +98,74 @@ img{
 
 
 .rightArea{
-	width: 350px;
+	/*width: 350px;
 	height: 330px;
 	margin-left: 200px;
 	border: 2px dashed transparent;
 	border-radius: 10px;
 	border-image: linear-gradient(to right, #efc04b, #d7908d);
+	border-image-slice: 5;*/
+	margin-left: 200px;
+}
+
+.border-right
+{
+	border: 3px dotted transparent;
+	border-radius: 10px;
+	border-image: linear-gradient(to right, #eec838, #d89486);
 	border-image-slice: 5;
-	margin-top: 10px;
+	margin:20px auto;
+
+}
+
+.chorus{
+	margin: 5px;
+	border:3px dotted transparent;
+	border-radius: 10px;
+	border-image: linear-gradient(to right, #d89486,#eec838);
+	border-image-slice: 5;
+	background-image: linear-gradient(to right , #653d4d, #5e2b65);
+	
 }
 
 
-.chorus {
-	width: 335px;
-	height: 315px;
-	background-color: #61325c;
-	border:dotted 3px transparent;
-	border-image: linear-gradient(to right, #bc836c,#eeca32);
-	border-image-slice: 5;
-	margin:5px;
+.seat {
+	width: 105px;
+	height:135px;
+	border: 5px dotted transparent;
+	border-color: #816172;
+
+}
+
+.table img{
+	width: 170px;
+	height: 170px;
+}
+
+.mainChorus{
 	display: flex;
 	flex-direction: row;
 }
 
-#chorusTitle{
-	margin-left: 200px;
+.seat1 {
+	margin: 10px auto;
 }
 
-#button{
-	margin-left: 110px;
-	width: 50px;
+.seat4{
+	margin: 10px auto;
 }
 
-button{
-	margin-left: 40px;
-	margin-top: 15px;
-	width: 50px;
+.seat2 {
+	margin: auto 10px;
 }
+
+.seat3{
+	margin:auto 10px;
+
+}
+
+
 footer{
 	margin-top: 60px;
 }
+
