@@ -1,93 +1,54 @@
-// (() => {
-//     let aud    = document.querySelector('audio'),
-//         play   = document.querySelector("#playAudio"),
-//         pause  = document.querySelector("#stopAudio"),
-//         rewind = document.querySelector("#rewindAudio"),
-//         tracks =document.querySelectorAll(".trackholder");
-
-//     function playAudio() {
-//         aud.play();
-//     }
-
-//     function pauseAudio() {
-//         aud.pause(true);
-//     }
-
-//     function rewindAudio(){
-//         aud.currentTime = 0;
-
-//         playAudio();
-//     }
-
-//     function switchAudioTrack(){
-//         currentTrack = this.dataset.currenttrack;
-
-//         aud.src = `audio/${currentTrack}`;
-//         aud.load();
-//         aud.play();
-//     }
-
-//     play.addEventListener("click", playAudio);
-//     pause.addEventListener("click", pauseAudio);
-//     rewind.addEventListener("click", rewindAudio);
-
-//     tracks.forEach(track => {
-//         track.addEventListener("click", switchAudioTrack);
-//     });
-
-// })();
-
-
 (() => {
-    console.log('fired!');
- 
-    let voicesBoard =  document.querySelector('.icons');
-    let chorusBoard = document.querySelector('.chorus');
+    console.log("fire");
 
-    // let mahjongSelctors = document.querySelectorAll('#mahjongHolder img');
+    // var mahjong_arry = [ "01", "02", "03", "04", "05", "06", "07", "08", "09"];
 
-    let chorusZones = document.querySelectorAll('.seat');
-    let audioPlayer = document.querySelector('audio');
+    // var audio_arry = [ "01", "02", "03", "04", "05", "06", "07", "08", "09"];
 
-      
-    function initDrag(){
-        voicesBoard.querySelectorAll('img').forEach(img => {
-            img.addEventListener("dragstart", function(e){
-                console.log('draggin...');
-                e.dataTransfer.setData("text/plain", this.id);
-            });
+    // for (var i = 0; i<9; i++) {
+    //     console.log("mahjong"+ mahjong_arry[i]);
+    //     console.log("audio"+ audio_arry[i]);
+    // }
+
+
+    let icon = document.querySelectorAll(".trackholder");
+    let seatBoard = document.querySelector(".chorus");
+    let dropZones =document.querySelectorAll(".seat");
+
+
+     icon.forEach(icon => {
+        icon.addEventListener("dragstart", function(e){
+            console.log("you drag me");
+            e.dataTransfer.setData("text/plain", this.id);
         });
-    }
+     });
 
-    chorusZones.forEach(zone =>{
+
+
+    dropZones.forEach(zone => {
         zone.addEventListener("dragover", function(e){
             e.preventDefault();
-            console.log('dragged over me!');
+            console.log("dragged over me");
         });
-
         zone.addEventListener("drop",function(e) {
-            e.preventDefault();
-            console.log('you dropped something on me!');
+                e.preventDefault();
+                console.log('you can drop!'); 
 
-            let voice = document.querySelector(`#${e.dataTransfer.getData("text/plain")}`);
-            e.target.appendChild(voice);
+                let icon = e.dataTransfer.getData("text/plain");
+            
+                
+                if(e.currentTarget.firstElementChild){
+                    let currentImage = e.currentTarget.firstElementChild;
+                    piecesBoard.appendChild(currentImage);
 
-            // to layer in the audio tracks, you'd create a new audio element here the way we did it with the shooter game example
+                   
+                }
 
-            let newAudioSource = `audio/${voice.dataset.currenttrack}`;
-            audioPlayer.src = newAudioSource;
-            audioPlayer.load();
-            audioPlayer.play();
+                e.currentTarget.appendChild(document.querySelector(`#${icon}`)); 
+            })
+    })
 
-        });
-        
-    });
 
-    function resetVoicesChorus(){
-        voicesBoard.innerHTML = "";
-        createVoicesChorus(this.dataset.chorusref);
-    }
 
-    initDrag();
 
 })();
