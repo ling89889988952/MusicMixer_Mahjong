@@ -165,7 +165,16 @@ img{
 }
 
 
+button{
+	margin-left: 40px;
+	margin-top: 15px;
+	width: 50px;
+	
+}
 footer{
 	margin-top: 60px;
 }
 
+#click{
+	
+}
