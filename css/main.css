@@ -64,7 +64,7 @@ img{
 	border-image: linear-gradient(to right, #efc04b, #d78f8d);
 	border-image-slice: 5;
 	margin:20px auto;
-
+	width: 450px;
 }
 .icons {
 	width:auto;
@@ -80,7 +80,7 @@ img{
 .iconImg{
 	display: flex;
 	flex-direction: row;
-	margin:25px 15px;
+	margin:15px 10px;
 }
 
 
@@ -105,7 +105,8 @@ img{
 	border-radius: 10px;
 	border-image: linear-gradient(to right, #efc04b, #d7908d);
 	border-image-slice: 5;*/
-	margin-left: 200px;
+	margin-left: 100px;
+
 }
 
 .border-right
