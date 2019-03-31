@@ -65,10 +65,12 @@ img{
 	border-image-slice: 5;
 	margin:20px auto;
 	width: 450px;
+	height: 365px;
+
 }
 .icons {
 	width:auto;
-	height: auto;
+	height: 350px;
 	background-color: #6b483c;
 	border:dotted 3px transparent;
 	border-image: linear-gradient(to right, #c98e6f,#eecc2e);
@@ -148,19 +150,19 @@ img{
 	flex-direction: row;
 }
 
-.seat1 {
+#seat1 {
 	margin: 10px auto;
 }
 
-.seat4{
+#seat4{
 	margin: 10px auto;
 }
 
-.seat2 {
+#seat2 {
 	margin: auto 10px;
 }
 
-.seat3{
+#seat3{
 	margin:auto 10px;
 
 }

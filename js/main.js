@@ -1,20 +1,16 @@
 (() => {
     console.log("fire");
 
-    // var mahjong_arry = [ "01", "02", "03", "04", "05", "06", "07", "08", "09"];
-
-    // var audio_arry = [ "01", "02", "03", "04", "05", "06", "07", "08", "09"];
-
-    // for (var i = 0; i<9; i++) {
-    //     console.log("mahjong"+ mahjong_arry[i]);
-    //     console.log("audio"+ audio_arry[i]);
-    // }
-
 
     let icon = document.querySelectorAll(".trackholder");
-    let seatBoard = document.querySelector(".chorus");
-    let dropZones =document.querySelectorAll(".seat");
+    let dropZones = document.querySelectorAll(".seat");
+    let audio = document.querySelector('audio');
+    let seat = document.querySelectorAll(".seat");
+    let iconBoard = document.querySelectorAll(".iconImg");
+  
 
+//  Create the drag & drop event 
+//  Make the icon can be drag to the chorus area
 
      icon.forEach(icon => {
         icon.addEventListener("dragstart", function(e){
@@ -37,16 +33,80 @@
                 let icon = e.dataTransfer.getData("text/plain");
             
                 
-                if(e.currentTarget.firstElementChild){
-                    let currentImage = e.currentTarget.firstElementChild;
-                    piecesBoard.appendChild(currentImage);
+                // if(e.currentTarget.firstElementChild){
+                //     let currentImage = e.currentTarget.firstElementChild;
+                //     dropZones.appendChild(currentImage);
 
                    
-                }
+                // }
 
                 e.currentTarget.appendChild(document.querySelector(`#${icon}`)); 
             })
     })
+
+
+//  Make the icon can be drag  back to the voice area
+
+
+    iconBoard.forEach(board => {
+        board.addEventListener("dragover", function(e){
+            e.preventDefault();
+            console.log("where to go?");
+        });
+
+        board.addEventListener("drop", function(e){
+            e.preventDefault();
+            console.log('you can take me back!');
+
+            let icon = e.dataTransfer.getData("text/plain");
+
+            e.target.appendChild(document.querySelector(`#${icon}`));
+
+            console.log('Thanks');
+            
+        })
+    })
+
+
+
+    function playAudio(){
+        console.log('audio play');
+        audio.play();
+    }
+
+    function pauseAudio(){
+        console.log('audio pause');
+        audio.pause(true);
+    }
+
+    function toggleAudio(){
+        if(audio.paused){
+            audio.play();
+        }else{
+            audio.pause();
+        }
+    }
+
+
+
+    function switchAudioTrack(){
+        currentTrack = this.dataset.currenttrack;
+
+        if(!audio.src.includes(currentTrack)){
+            audio.src = `audio/${currentTrack}`;
+            audio.load();
+        }
+        
+        toggleAudio();
+       
+    }
+
+
+  
+
+    icon.forEach(icon => {
+        icon.addEventListener("click", switchAudioTrack);
+    });
 
 
 
