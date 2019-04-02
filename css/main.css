@@ -150,19 +150,19 @@ img{
 	flex-direction: row;
 }
 
-#seat1 {
+.seat1 {
 	margin: 10px auto;
 }
 
-#seat4{
+.seat4{
 	margin: 10px auto;
 }
 
-#seat2 {
+.seat2 {
 	margin: auto 10px;
 }
 
-#seat3{
+.seat3{
 	margin:auto 10px;
 
 }
