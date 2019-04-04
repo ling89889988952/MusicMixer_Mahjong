@@ -4,9 +4,9 @@
 
     let icon = document.querySelectorAll(".trackholder");
     let dropZones = document.querySelectorAll(".seat");
-    let audio = document.querySelector('audio');
+    let audio = document.getElementById('audio1');
     let iconBoard = document.querySelectorAll(".iconImg");
- 
+    let audioBox = document.querySelectorAll(".audioBox");
 
   //create audio function 
     function loadAuido(){
@@ -51,19 +51,28 @@
         icon.addEventListener("click", switchAudioTrack);
     });
 
+    // creat the chrous founction
 
+    function loadAudioBox() {
+       audioBox.load();
+    }
 
-    // function autoAudio(){
-    //     currentTrack = this.dataset.currenttrack;
+    function playAudioBox(){      
+        audioBox.play();
+    }
 
-    //      if(!audio.src.includes(currentTrack)){
-    //         audio.src = `audio/${currentTrack}`;
-    //         audio.load();
-    //     }
-
-    //     playAudio();
+    // function pauseAudioBox(){
+    //     audioBox.pause();
     // }
 
+
+    // function toggleAudioBox(){
+    //     if(audioBox.paused){
+    //         audioBox.play();
+    //     }else{
+    //         audioBox.pause();
+    //     }
+    // }
 
 
 //  Create the drag & drop event 
@@ -87,9 +96,7 @@
 
                 let icon = e.dataTransfer.getData("text/plain");
                 
-               
-            
-                
+        
                 // if(e.currentTarget.firstElementChild){
                 //     let currentImage = e.currentTarget.firstElementChild;
                 //     dropZones.appendChild(currentImage);
@@ -99,30 +106,41 @@
                 e.currentTarget.appendChild(document.querySelector(`#${icon}`)); 
                 // e.currentTarget.firstElementChild.dataset.currenttrack(document.createElement('audio'));
 
-              
-
-
-
                 // pull the dataset.currenttrack, create a new audio element (document.createElement('audio'))
 
                 // set the source, load it and play it
             })
-               // autoAudio();
+                // e.currentTarget.firstElementChild.dataset.currenttrack(document.createElement('audio'));
+
+                // let audioPlay = 
+
+             // switchAudioBoxTrack();
 
             // let audio = e.dataTransfer.getData("audio");
 
             // e.currentTarget.firstElementChild.dataset.currenttrack(document.createElement('audio'));
 
-         
-          
-
-
-
-     
-
        
     })
 
+       function switchAudioBoxTrack(){
+       currentTrack = this.dataset.currenttrack;
+
+        if(audioBox.src.includes('currentTrack')){
+            audioBox.src = `audio/${currentTrac}`;
+            audioBox.load();
+        }
+        
+        playAudioBox();   
+
+    }
+
+
+     dropZones.forEach(zone => {
+        zone.addEventListener("drop", switchAudioBoxTrack);
+    });
+
+    
  
 //  Make the icon can be drag  back to the voice area
 
