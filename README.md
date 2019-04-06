@@ -28,8 +28,6 @@ How to use this website?
    audio. And browers can click the another icon to change the audio to listen another mahjong's voice.
 
 
-2. Browers can observe the pattern of mahjong , try to drag them to the different seats (with dotted board) in Chorus Area(drop area).
-   And the icon can play audio automatically. Browers can put two , three and four mahjong in to the empty seats , the Chorus Area can play the four audio together.
+2. Browers can observe the pattern of mahjong , try to drag them to the different seats (with dotted board) in Chorus Area(drop area). And the icon can play audio automatically. Browers can put different mahjongs in to the empty seats , the Chorus Area can play the all the audio together. And browesr can also click the majhong table to control the audio play and pause.
 
-3. Browers can change their mind to drag the mahjong in the Chrous Area back to the Voice area, and drag the new mahjong into the empty 
-   seats.
+3. Browers can change their mind to drag the mahjong from the Chrous Area back to the Voice area, and drag the new mahjong into the empty seats.
